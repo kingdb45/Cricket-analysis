@@ -1,0 +1,20 @@
+<canvas id="lineChart"></canvas>
+
+<script>
+new Chart(document.getElementById("lineChart"), {
+type: 'line',
+data: {
+labels: ['2018','2019','2020','2021','2022'],
+datasets: [
+{
+label: 'Virat Kohli',
+data: [1200, 1300, 800, 900, 1100]
+},
+{
+label: 'Rohit Sharma',
+data: [900, 1100, 700, 1000, 950]
+}
+]
+}
+});
+</script>

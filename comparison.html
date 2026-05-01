@@ -1,0 +1,42 @@
+<table>
+<tr>
+<th>Player</th><th>Matches</th><th>Runs</th><th>Average</th><th>Strike Rate</th>
+</tr>
+
+<tr>
+<td>Sachin Tendulkar</td><td>664</td><td>34357</td><td>45.16</td><td>67</td>
+</tr>
+
+<tr>
+<td>Virat Kohli</td><td>500+</td><td>25000+</td><td>48</td><td>90</td>
+</tr>
+
+<tr>
+<td>Rohit Sharma</td><td>450+</td><td>18000+</td><td>48</td><td>90</td>
+</tr>
+</table>
+
+<canvas id="barChart"></canvas>
+
+<script>
+new Chart(document.getElementById('barChart'), {
+type: 'bar',
+data: {
+labels: ['Runs', 'Average', 'Strike Rate'],
+datasets: [
+{
+label: 'Sachin',
+data: [34357, 45.16, 67]
+},
+{
+label: 'Kohli',
+data: [25000, 48, 90]
+},
+{
+label: 'Rohit',
+data: [18000, 48, 90]
+}
+]
+}
+});
+</script>

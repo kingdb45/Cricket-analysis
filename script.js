@@ -1,0 +1,1 @@
+console.log("Cricket Analytics Loaded");
